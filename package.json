@@ -1,0 +1,30 @@
+{
+  "name": "grav-theme-stoneage",
+  "version": "1.0.0",
+  "description": "Stoneage is a theme for the blogging developer.",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstoone/grav-theme-stoneage.git"
+  },
+  "keywords": [
+    "stoneage",
+    "developer",
+    "html5"
+  ],
+  "author": "Jakob Steinn",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jstoone/grav-theme-stoneage/issues"
+  },
+  "homepage": "https://github.com/jstoone/grav-theme-stoneage#readme",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "gulp": "^3.9.0",
+    "jquery": "^2.2.0",
+    "laravel-elixir": "^4.2.0"
+  }
+}

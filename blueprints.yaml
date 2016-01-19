@@ -1,0 +1,13 @@
+name: Stoneage
+version: 1.0.0
+description: "Stoneage is a theme for the blogging developer."
+icon: empire
+author:
+  name: Jakob Steinn
+  email: jakobsteinn@protonmail.com
+  url: https://jakobsteinn.com
+homepage: https://github.com/jstoone/grav-theme-stoneage
+demo: https://jakobsteinn.com
+keywords: stoneage, developer, html5
+bugs: https://github.com/jstoone/grav-theme-stoneage/issues
+license: GNU GPLv3
