@@ -1,0 +1,86 @@
+$markdown-color: $brand-primary;
+$markdown-color-light: lighten($markdown-color, 25%);
+
+main.container {
+  h1:before,
+  h2:before,
+  h3:before,
+  h4:before,
+  h5:before,
+  h6:before,
+  blockquote:before,
+  hr:before {
+    padding-right: 10px;
+    
+    position: absolute;
+    right: 100%;
+
+    color: $markdown-color-light;
+    white-space: nowrap;
+  }
+
+  blockquote {  border-left: 0; margin-left: 0; padding-left: 0; }
+  blockquote:before {
+    color: $markdown-color-light;
+    content: ">";
+    font-weight: bold;
+    vertical-align: center;
+  }
+
+  h1:before { content: "#";}
+  h2:before { content: "##";}
+  h3:before { content: "###";}
+  h4:before { content: "####";}
+  h5:before { content: "#####";}
+  h6:before { content: "######";}
+
+  h1, h2, h3, h4, h5, h6 {
+    a {
+      &:before, &:after {
+        content: '';
+        color: inherit;
+      }
+    }
+  }
+
+  hr:before {
+    content: "﹘﹘﹘";
+    line-height: 1.2;
+    vertical-align: bottom;
+  }
+
+  pre:before, pre:after {
+    content: "```";
+    display: block;
+    color: $markdown-color-light;
+  }
+
+  ul { list-style: none; }
+  ul li:before {
+    content: "*";
+    color: $markdown-color-light;
+    line-height: 1;
+    vertical-align: bottom;
+    margin-left: -1.2em;
+    display: inline-block;
+    width: 1.2em;
+  }
+
+  b:before, b:after,
+  strong:before, strong:after {
+    content: "**";
+    color: $markdown-color-light;
+    font-weight: normal;
+  }
+
+  i:not(.fa), em {
+    &:before, &:after {
+      content: "*";
+      color: $markdown-color-light;
+    }
+  }
+
+  a { text-decoration: none; }
+  a:before { content: "["; color: $markdown-color-light; }
+  a:after { content: "](" attr(href) ")"; color: $markdown-color-light; }
+}

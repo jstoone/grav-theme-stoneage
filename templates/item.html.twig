@@ -5,10 +5,8 @@
 			{% include 'partials/breadcrumbs.html.twig' %}
 		{% endif %}
 		
-		<div class="blog-content-item grid pure-g-r">
-			<div id="item" class="block pure-u-2-3">
-			    {% include 'partials/blog_item.html.twig' with {'blog':page.parent, 'truncate':false} %}
-			</div>
+		<div class="blog-content-item">
+		    {% include 'partials/blog/item.html.twig' with {'blog':page.parent, 'truncate':false} %}
 		</div>
 	{% endblock %}
 

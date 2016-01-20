@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+}
+#grav-theme-stoneage .page-wrapper {
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+}
+main {
+	flex: 1;
+}
+
+// Element
+.cli-start {
+	color: $brand-primary;
+}
+
+// Footer
+footer {
+	$footer-height: 35px;
+
+	height: $footer-height;
+	color: white;
+	background-color: $brand-primary;
+
+	> .container {
+		line-height: $footer-height;
+	}
+}

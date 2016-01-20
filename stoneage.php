@@ -4,7 +4,6 @@ namespace Grav\Theme;
 
 use Grav\Common\Theme;
 
-class Stoneage extends Theme
+class stoneage extends Theme
 {
-
 }

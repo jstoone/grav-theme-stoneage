@@ -1,0 +1,3 @@
+{% for blog_post in page.find('/blog').collection() %}
+    {% include 'partials/blog/list-item.html.twig' with {'page':blog_post} %}
+{% endfor %}

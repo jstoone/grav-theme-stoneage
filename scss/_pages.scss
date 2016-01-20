@@ -1,0 +1,12 @@
+// Pages
+@import "pages/blog";
+@import "pages/default";
+@import "pages/display";
+@import "pages/error";
+@import "pages/item";
+
+// Page partials
+#grav-theme-stoneage {
+	@import 'pages/partials/breadcrumbs';
+	@import 'pages/partials/blog-list';
+}

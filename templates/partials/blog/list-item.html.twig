@@ -1,0 +1,27 @@
+<div class="blog-item">
+
+    <div class="date">
+        {% set dateFormat = page.date|date('M d H:i') %}
+        -rwx------ jstoone jstoone Nov 04 16:31 {{ dateFormat }}
+    </div>
+
+    <div class="blog-list-header">
+        <h1>
+            <a href="{{ page.url }}">
+                {{ page.title }}
+            </a>
+        </h1>
+    </div>
+
+    <div class="blog-list-content">
+
+        {% if page.summary %}
+            {{ page.summary }}
+        {% else %}
+            {{ page.content|truncate(550) }}
+        {% endif %}
+
+        <p><a href="{{ page.url }}">Continue Reading...</a></p>
+    </div>
+    
+</div>

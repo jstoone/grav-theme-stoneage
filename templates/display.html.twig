@@ -1,0 +1,21 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+	<div class="row">
+		<div class="col-md-offset-3 col-md-6">
+			<div class="top text-center">
+				<img src="{{ url('theme://images/profile.png') }}" alt="Profile image" class="">
+				<h1>{{ page.header.heading }}</h1>
+				<p>
+					{{ page.header.sub_heading }}
+				</p>
+			</div>
+		</div>
+	</div>
+
+	{% if page.header.show_posts %}
+        {% include 'partials/blog/list.html.twig' %}
+	{% else %}
+		{{ page.content }}
+	{% endif %}
+{% endblock %}

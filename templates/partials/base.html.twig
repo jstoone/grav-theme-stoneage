@@ -33,23 +33,22 @@
         {% endblock head %}
     </head>
 
-      <body>
-
+    <body id="grav-theme-stoneage" class="{{ page.template }}">
+        <div class="page-wrapper">
         {# include the header + navigation #}
         {% include 'partials/header.html.twig' %}
 
-        <div class="container">
-            <div class="col-md-offset-2 col-md-8">
+        <main class="container">
+            <div class="col-md-offset-1 col-md-10">
                 {% block content %}{% endblock %}
             </div>
-        </div>
+        </main>
 
-        <div class="footer">
-            <div class="container">
-                <p class="text-muted">
+        <footer class="footer">
+            <div class="container text-center">
                     copy fork and do what you want with this content, source code is on github.
-                </p>
             </div>
+        </footer>
         </div>
     </body>
     {% block bottom %}{% endblock %}

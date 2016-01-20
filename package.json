@@ -23,6 +23,7 @@
   "homepage": "https://github.com/jstoone/grav-theme-stoneage#readme",
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.5.0",
     "gulp": "^3.9.0",
     "jquery": "^2.2.0",
     "laravel-elixir": "^4.2.0"
